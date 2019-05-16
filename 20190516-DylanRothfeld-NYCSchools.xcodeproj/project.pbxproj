@@ -17,6 +17,7 @@
 		B0B58B79228DD0F80059DBC4 /* JSONSerializationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58B78228DD0F80059DBC4 /* JSONSerializationErrors.swift */; };
 		B0B58B7B228DD2EF0059DBC4 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58B7A228DD2EF0059DBC4 /* APIService.swift */; };
 		B0B58B7D228DD4FC0059DBC4 /* SpinnerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58B7C228DD4FC0059DBC4 /* SpinnerService.swift */; };
+		B0B58B7F228DDAB80059DBC4 /* SchoolSATViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58B7E228DDAB80059DBC4 /* SchoolSATViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B0B58B78228DD0F80059DBC4 /* JSONSerializationErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializationErrors.swift; sourceTree = "<group>"; };
 		B0B58B7A228DD2EF0059DBC4 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		B0B58B7C228DD4FC0059DBC4 /* SpinnerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerService.swift; sourceTree = "<group>"; };
+		B0B58B7E228DDAB80059DBC4 /* SchoolSATViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSATViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				B0B58B52228DCAE60059DBC4 /* SchoolListViewController.swift */,
+				B0B58B7E228DDAB80059DBC4 /* SchoolSATViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				B0B58B7D228DD4FC0059DBC4 /* SpinnerService.swift in Sources */,
 				B0B58B77228DD0D20059DBC4 /* NYCSchool.swift in Sources */,
 				B0B58B51228DCAE60059DBC4 /* AppDelegate.swift in Sources */,
+				B0B58B7F228DDAB80059DBC4 /* SchoolSATViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
