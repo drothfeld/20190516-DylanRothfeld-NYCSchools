@@ -21,6 +21,7 @@
 		B0B58B81228DDBDC0059DBC4 /* NYCSchoolSAT.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58B80228DDBDC0059DBC4 /* NYCSchoolSAT.swift */; };
 		B0B58B83228DE46F0059DBC4 /* school_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B58B82228DE46F0059DBC4 /* school_icon.png */; };
 		B0B58B86228DECA30059DBC4 /* SATScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58B85228DECA30059DBC4 /* SATScores.swift */; };
+		B0B58B88228DF0180059DBC4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B0B58B87228DF0180059DBC4 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		B0B58B80228DDBDC0059DBC4 /* NYCSchoolSAT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolSAT.swift; sourceTree = "<group>"; };
 		B0B58B82228DE46F0059DBC4 /* school_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = school_icon.png; sourceTree = "<group>"; };
 		B0B58B85228DECA30059DBC4 /* SATScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScores.swift; sourceTree = "<group>"; };
+		B0B58B87228DF0180059DBC4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		B0B58B44228DCAE60059DBC4 = {
 			isa = PBXGroup;
 			children = (
+				B0B58B87228DF0180059DBC4 /* README.md */,
 				B0B58B4F228DCAE60059DBC4 /* 20190516-DylanRothfeld-NYCSchools */,
 				B0B58B64228DCAE70059DBC4 /* 20190516-DylanRothfeld-NYCSchoolsTests */,
 				B0B58B4E228DCAE60059DBC4 /* Products */,
@@ -259,6 +262,7 @@
 			files = (
 				B0B58B5B228DCAE70059DBC4 /* LaunchScreen.storyboard in Resources */,
 				B0B58B58228DCAE70059DBC4 /* Assets.xcassets in Resources */,
+				B0B58B88228DF0180059DBC4 /* README.md in Resources */,
 				B0B58B83228DE46F0059DBC4 /* school_icon.png in Resources */,
 				B0B58B56228DCAE60059DBC4 /* Main.storyboard in Resources */,
 			);
