@@ -93,6 +93,10 @@ class APIService: NSObject {
                         schoolSAT = school
                     }
                 }
+                // Make sure the NYCSchoolSAT contains valid data.
+                if (!schoolSAT.isValidAverageScores()) {
+                    schoolSAT = NYCSchoolSAT(averageSATScoreReading: "N/A", averageSATScoreMath: "N/A", averageSATScoreWriting: "N/A")
+                }
                 DispatchQueue.main.async {
                     completion(.success(schoolSAT))
                 }

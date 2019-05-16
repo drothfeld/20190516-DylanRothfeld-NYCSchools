@@ -20,6 +20,7 @@
 		B0B58B7F228DDAB80059DBC4 /* SchoolSATViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58B7E228DDAB80059DBC4 /* SchoolSATViewController.swift */; };
 		B0B58B81228DDBDC0059DBC4 /* NYCSchoolSAT.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58B80228DDBDC0059DBC4 /* NYCSchoolSAT.swift */; };
 		B0B58B83228DE46F0059DBC4 /* school_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B58B82228DE46F0059DBC4 /* school_icon.png */; };
+		B0B58B86228DECA30059DBC4 /* SATScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58B85228DECA30059DBC4 /* SATScores.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		B0B58B7E228DDAB80059DBC4 /* SchoolSATViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSATViewController.swift; sourceTree = "<group>"; };
 		B0B58B80228DDBDC0059DBC4 /* NYCSchoolSAT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolSAT.swift; sourceTree = "<group>"; };
 		B0B58B82228DE46F0059DBC4 /* school_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = school_icon.png; sourceTree = "<group>"; };
+		B0B58B85228DECA30059DBC4 /* SATScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScores.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		B0B58B72228DD0160059DBC4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B0B58B84228DEC7D0059DBC4 /* Constants */,
 				B0B58B76228DD0D20059DBC4 /* NYCSchool.swift */,
 				B0B58B80228DDBDC0059DBC4 /* NYCSchoolSAT.swift */,
 				B0B58B78228DD0F80059DBC4 /* JSONSerializationErrors.swift */,
@@ -163,6 +166,14 @@
 				B0B58B82228DE46F0059DBC4 /* school_icon.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		B0B58B84228DEC7D0059DBC4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B0B58B85228DECA30059DBC4 /* SATScores.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0B58B53228DCAE60059DBC4 /* SchoolListViewController.swift in Sources */,
+				B0B58B86228DECA30059DBC4 /* SATScores.swift in Sources */,
 				B0B58B7B228DD2EF0059DBC4 /* APIService.swift in Sources */,
 				B0B58B79228DD0F80059DBC4 /* JSONSerializationErrors.swift in Sources */,
 				B0B58B7D228DD4FC0059DBC4 /* SpinnerService.swift in Sources */,

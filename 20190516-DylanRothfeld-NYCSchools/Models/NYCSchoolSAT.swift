@@ -52,4 +52,21 @@ struct NYCSchoolSAT: Equatable {
                 (schoolA.averageSATScoreWriting == schoolB.averageSATScoreWriting)
         )
     }
+    
+    // Returns true if all average SAT score fields are valid integers between the min and max scores
+    func isValidAverageScores() -> Bool {
+        let isValidReadingScore = ((Int(self.averageSATScoreReading)  != nil) &&
+                                   (Int(self.averageSATScoreReading)! >= minSATSubjectScore) &&
+                                   (Int(self.averageSATScoreReading)! <= maxSATSubjectScore))
+        
+        let isValidMathScore = ((Int(self.averageSATScoreMath)  != nil) &&
+                                (Int(self.averageSATScoreMath)! >= minSATSubjectScore) &&
+                                (Int(self.averageSATScoreMath)! <= maxSATSubjectScore))
+        
+        let isValidWritingScore = ((Int(self.averageSATScoreWriting)  != nil) &&
+                                   (Int(self.averageSATScoreWriting)! >= minSATSubjectScore) &&
+                                   (Int(self.averageSATScoreWriting)! <= maxSATSubjectScore))
+        
+        return (isValidReadingScore && isValidMathScore && isValidWritingScore)
+    }
 }
