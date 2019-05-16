@@ -11,24 +11,56 @@ import XCTest
 
 class _0190516_DylanRothfeld_NYCSchoolsTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    // UNIT TEST:
+    // Tests API call to fetch New York City School data.
+    // Only makes sure the API call runs without issue (success or fail).
+    func testAPIGetNYCSchoolData() {
+        // Given
+        let apiService = APIService()
+        
+        // When
+        apiService.getNYCSchoolData( completion: { results in
+            switch results {
+            case .success(let schools):
+                let schoolList: [NYCSchool] = schools
+                
+                // Then
+                XCTAssert(!schoolList.isEmpty)
+                
+            case .failure(let error):
+                print(error.localizedDescription)
+                
+                // Then
+                XCTAssert(!error.localizedDescription.isEmpty)
+            }
+        })
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    
+    // UNIT TEST:
+    // Tests API call to fetch New York City School SAT data.
+    // Only makes sure the API call runs without issue (success or fail).
+    func testAPIGetNYCSchoolSATData() {
+        // Given
+        let apiService = APIService()
+        let testSchoolSAT: NYCSchoolSAT = NYCSchoolSAT(averageSATScoreReading: "428", averageSATScoreMath: "465", averageSATScoreWriting: "422")
+        let schoolID = "32K554"
+        
+        // When
+        apiService.getNYCSchoolSATData(schoolID: schoolID, completion: { results in
+            switch results {
+            case .success(let school):
+                let schoolSAT: NYCSchoolSAT = school
+                
+                // Then
+                XCTAssert(schoolSAT == testSchoolSAT)
+                
+            case .failure(let error):
+                print(error.localizedDescription)
+                
+                // Then
+                XCTAssert(!error.localizedDescription.isEmpty)
+            }
+        })
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
