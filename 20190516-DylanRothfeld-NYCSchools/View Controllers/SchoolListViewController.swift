@@ -85,4 +85,17 @@ class SchoolListViewController: UIViewController, UITableViewDataSource, UITable
         refreshTable()
         searchBar.endEditing(true)
     }
+    
+    // Preparing specific NYCSchool to transition to SchoolSATViewController with
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toSchoolSAT") {
+            if let indexPath = schoolListTableView.indexPathForSelectedRow {
+                let schoolID = schoolList[indexPath.item].id
+                let schoolName = schoolList[indexPath.item].name
+                let controller = segue.destination as! SchoolSATViewController
+                controller.schoolID = schoolID
+                controller.schoolName = schoolName
+            }
+        }
+    }
 }

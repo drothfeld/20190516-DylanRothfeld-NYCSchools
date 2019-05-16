@@ -16,7 +16,10 @@ class SchoolSATViewController: UIViewController {
     @IBOutlet weak var AverageSATWritingScoreLabel: UILabel!
     
     // Controller Values
-    
+    let apiService = APIService()
+    var schoolID: String!
+    var schoolName: String!
+    var schoolSAT: NYCSchoolSAT!
     
     override func viewDidLoad() {
         super.viewDidLoad()
