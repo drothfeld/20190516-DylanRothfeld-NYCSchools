@@ -15,6 +15,7 @@
 		B0B58B66228DCAE70059DBC4 /* _0190516_DylanRothfeld_NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58B65228DCAE70059DBC4 /* _0190516_DylanRothfeld_NYCSchoolsTests.swift */; };
 		B0B58B77228DD0D20059DBC4 /* NYCSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58B76228DD0D20059DBC4 /* NYCSchool.swift */; };
 		B0B58B79228DD0F80059DBC4 /* JSONSerializationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58B78228DD0F80059DBC4 /* JSONSerializationErrors.swift */; };
+		B0B58B7B228DD2EF0059DBC4 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58B7A228DD2EF0059DBC4 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		B0B58B67228DCAE70059DBC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0B58B76228DD0D20059DBC4 /* NYCSchool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchool.swift; sourceTree = "<group>"; };
 		B0B58B78228DD0F80059DBC4 /* JSONSerializationErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializationErrors.swift; sourceTree = "<group>"; };
+		B0B58B7A228DD2EF0059DBC4 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		B0B58B73228DD0220059DBC4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B0B58B7A228DD2EF0059DBC4 /* APIService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0B58B53228DCAE60059DBC4 /* SchoolListViewController.swift in Sources */,
+				B0B58B7B228DD2EF0059DBC4 /* APIService.swift in Sources */,
 				B0B58B79228DD0F80059DBC4 /* JSONSerializationErrors.swift in Sources */,
 				B0B58B77228DD0D20059DBC4 /* NYCSchool.swift in Sources */,
 				B0B58B51228DCAE60059DBC4 /* AppDelegate.swift in Sources */,
