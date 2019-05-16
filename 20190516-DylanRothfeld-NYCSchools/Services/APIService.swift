@@ -53,5 +53,51 @@ class APIService: NSObject {
             }
         }.resume()
     }
+    
+    
+    
+    //
+    // GET: Retrieves SAT data for a single NYC school
+    //
+    func getNYCSchoolSATData(schoolID: String, completion: @escaping (Result<NYCSchoolSAT, Error>) -> Void) {
+        let schoolSATDataEndpoint: String = "https://data.cityofnewyork.us/resource/f9bf-2cp4.json?dbn=" + schoolID
+        // An error occurred when creating the API url endpoint
+        guard let url = URL(string: schoolSATDataEndpoint) else {
+            print("Error: cannot create URL")
+            return
+        }
+        let searchURL = URLRequest(url: url)
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        
+        // Start URL session to get data from endpoint
+        session.dataTask(with: searchURL) { (data, _, error) in
+            // An error occurred when making the API call
+            if let error = error {
+                DispatchQueue.main.async {
+                    completion(.failure(error))
+                }
+                return
+            }
+            // An error occurred with the data that was retrieved
+            guard let data = data else {
+                print("Error: cannot get data")
+                return
+            }
+            // Getting JSON data to parse into NYCSchoolSAT model
+            var schoolSAT: NYCSchoolSAT!
+            
+            if let jsonDataArray = try? JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]] {
+                for eachData in jsonDataArray {
+                    if let school = try? NYCSchoolSAT(json: eachData) {
+                        schoolSAT = school
+                    }
+                }
+                DispatchQueue.main.async {
+                    completion(.success(schoolSAT))
+                }
+            }
+        }.resume()
+    }
 }
 
