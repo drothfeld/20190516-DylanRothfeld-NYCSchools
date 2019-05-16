@@ -13,6 +13,8 @@
 		B0B58B58228DCAE70059DBC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B58B57228DCAE70059DBC4 /* Assets.xcassets */; };
 		B0B58B5B228DCAE70059DBC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B58B59228DCAE70059DBC4 /* LaunchScreen.storyboard */; };
 		B0B58B66228DCAE70059DBC4 /* _0190516_DylanRothfeld_NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58B65228DCAE70059DBC4 /* _0190516_DylanRothfeld_NYCSchoolsTests.swift */; };
+		B0B58B77228DD0D20059DBC4 /* NYCSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58B76228DD0D20059DBC4 /* NYCSchool.swift */; };
+		B0B58B79228DD0F80059DBC4 /* JSONSerializationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B58B78228DD0F80059DBC4 /* JSONSerializationErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		B0B58B61228DCAE70059DBC4 /* 20190516-DylanRothfeld-NYCSchoolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20190516-DylanRothfeld-NYCSchoolsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0B58B65228DCAE70059DBC4 /* _0190516_DylanRothfeld_NYCSchoolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0190516_DylanRothfeld_NYCSchoolsTests.swift; sourceTree = "<group>"; };
 		B0B58B67228DCAE70059DBC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0B58B76228DD0D20059DBC4 /* NYCSchool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchool.swift; sourceTree = "<group>"; };
+		B0B58B78228DD0F80059DBC4 /* JSONSerializationErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializationErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 		B0B58B72228DD0160059DBC4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B0B58B76228DD0D20059DBC4 /* NYCSchool.swift */,
+				B0B58B78228DD0F80059DBC4 /* JSONSerializationErrors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -246,6 +252,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0B58B53228DCAE60059DBC4 /* SchoolListViewController.swift in Sources */,
+				B0B58B79228DD0F80059DBC4 /* JSONSerializationErrors.swift in Sources */,
+				B0B58B77228DD0D20059DBC4 /* NYCSchool.swift in Sources */,
 				B0B58B51228DCAE60059DBC4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
